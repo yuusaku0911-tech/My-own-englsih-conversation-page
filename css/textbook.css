@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/*------------------------------------
+   共通 material
+---------------------------------------*/
+
+.material-textbook{
+    background:#DEBED0;
+    padding:80px 20px 0;
+}
+
+.material-head{
+    background:#fff;
+    max-width:1000px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.material-title{
+    text-align: center;
+    font-weight:700;
+    margin-bottom:15px;
+    font-size:clamp(20px,3vw,25px);
+}
+
+.material-skill-list{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:50px;
+    list-style:none;
+    padding:0;
+}
+
+.material-skill{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.material-skill span {
+    font-size: clamp(15px,3vw,20px);
+}
+
+.material-skill .big {
+    width:100px;
+    margin-left: -30px;
+}
+
+.material-skill img{
+    width:40px;
+}
+
+.material-skill p{
+    font-size:clamp(10px,1.5vw,16px);
+}
+
+
+
+/*------------------------------------
+   共通 textbook-content
+---------------------------------------*/
+
+
+
+.textbook-content{
+    background:#DEBED0;
+    font-size:clamp(10px,2vw,20px);
+    font-weight:600;
+    padding:0 10px 60px;
+    margin-top: -1400px;
+}
+
+.textbook-content p{
+    line-height:1.8;
+}
+
+.textbook-wrapper{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+
+
+.textbook-title,
+.textbook-sec-title,
+.lesson-title,
+.practice-title{
+    position:relative;
+    margin-bottom:20px;
+}
+
+
+
+.textbook-title::after,
+.textbook-sec-title::after,
+.lesson-title::after,
+.practice-title::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#000;
+    left:0;
+    bottom:-5px;
+}
+
+
+
+.lesson{
+    margin-bottom:50px;
+}
+
+
+
+ul,
+ol{
+    padding-left:20px;
+    margin:10px 0;
+}
+
+li{
+    line-height:1.8;
+}
+
+/* ------------------------------
+スマホ
+--------------------------------- */
+
+@media screen and (min-width: 768px) {
+    .sp {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.material-skill-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.material-skill img{
+    width:20%;
+}
+
+.textbook-content {
+    margin-top: -60px;
+}
+
+
+
+}
+
+
+
+
+
+
+
